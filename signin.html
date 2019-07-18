@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Sign in</title>
+    <link rel = "icon" href = "aouina.jpg" type = "image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>input[type=text], select, textarea {
+      width: 300px;
+      padding: 12px; 
+      border: 1px solid #ccc;
+      border-radius: 4px; 
+      box-sizing: border-box; 
+      margin-top: 6px; 
+      margin-bottom: 16px; 
+      resize: vertical ;
+      margin-top: 30px;
+      margin-left: 100px
+      
+    }
+    
+    input[type=submit] {
+      background-color: #eb3a3a;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left: 200px
+    }
+    
+ 
+    
+    .container {
+      border-radius: 5px;
+    }</style>
+</head>
+<body> 
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                        <img src="aouina1.PNG" style="width: 50px;height: 50px; margin-right: 30px;">
+                    </div>
+                  <ul class="nav navbar-nav" style="display:inline-block;margin-right:800px; ">
+                    <li ><a href="file:///C:/Users/Asus/Desktop/mon%20project%20hh/index.html">Home</a></li>
+                    <li><a href="file:///C:/Users/Asus/Desktop/mon%20project%20hh/events.html ">Events</a></li>
+                    <li>  <a href="file:///C:/Users/Asus/Desktop/mon%20project%20hh/comingsoon.html ">Affiches</a></li>
+                    <li>  <a href="file:///C:/Users/Asus/Desktop/mon%20project%20hh/family.html">Family</a> </li>
+                      <li class="active"> <a href="file:///C:/Users/Asus/Desktop/mon%20project%20hh/signin.html">Sign in</a> </li>
+                  </ul>
+                </div>
+              </nav>
+
+
+
+
+
+              <div class="container">
+                <form id="contactForm">
+              
+                  <label for="fname" style="margin-right: -30px ;margin-top: 100px">First Name</label>
+                  <input type="text"  id="fname" name="firstname" placeholder="Your name.."><br>
+              
+                  <label for="lname"  style="margin-right: -30px">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+              
+                  
+                  <label for="email" style="margin-left: 9px">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email.."><br>
+        
+                  
+                  <label for="adress">Adress</label>
+                  <input type="text" id="adress" name="adress" placeholder="Your adress.."><br>
+        
+                  
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" pattern="[0-9]{8}" required name="phone" placeholder="Your phone.."><br>
+              
+                  <input type="submit" value="Submit" id="submitButton" onclick="verif()">
+              
+                </form>
+              </div>
+              <h1 style="margin-left: 850px;margin-top:-360px;font-size: 60px">Join Our <br><h1 style="margin-left: 920px;font-size: 60px;color: #eb3a3a">Family</h1></h1>
+                <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+      <script src="./main.js"></script>
+  
+</body>
+</html>
